@@ -1,6 +1,8 @@
 import discord
 from discord.ext import commands
 
+import config
+
 bot = commands.Bot(command_prefix='!!')
 
 @bot.event
@@ -18,4 +20,4 @@ async def greet(ctx):
 async def ping(ctx):
     await ctx.send("Pong!")
 
-bot.run('NDQ2MTQ1Njg1MTkzMDk3MjI2.Dd0xYw.4J4kmApDHIZoaQUD5yaFV-0Oeyg')
+bot.run(config.privtoken)

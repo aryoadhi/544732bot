@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-import config
+#import config
 
 bot = commands.Bot(command_prefix='!!')
 bot.remove_command('help')
@@ -57,4 +57,4 @@ async def help(ctx):
 
     await ctx.send(embed=embed)
 
-bot.run(config.privtoken)
+bot.run('NDQ2MTQ1Njg1MTkzMDk3MjI2.Dd0xYw.4J4kmApDHIZoaQUD5yaFV-0Oeyg')
